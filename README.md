@@ -6,7 +6,7 @@ New York City Bike Share system generates large-scale trip data that reflects ur
 
 **Website repository:**
 
-**Website link:** https://mertadad.github.io/website/
+**Website link:** 
 
 122203072-Veli Erenay Açıl
 
