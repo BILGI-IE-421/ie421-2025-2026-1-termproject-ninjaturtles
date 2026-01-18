@@ -27,5 +27,5 @@ The project is hosted using GitHub Pages:
 
 Website repository:
 
-Website link:
+Website link: https://mertadad.github.io/ninjaturtles_website/
 
