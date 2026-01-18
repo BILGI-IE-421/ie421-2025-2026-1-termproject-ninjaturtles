@@ -25,7 +25,9 @@ New York City Bike Share system generates large-scale trip data that reflects ur
 
 The project is hosted using GitHub Pages:
 
-Website repository:
+Website repository: https://github.com/BILGI-IE-421/ie421-2025-2026-1-termproject-ninjaturtles
 
 Website link: https://mertadad.github.io/ninjaturtles_website/
+
+https://bilgi-ie-421.github.io/ie421-2025-2026-1-termproject-ninjaturtles/
 
