@@ -20,6 +20,9 @@ New York City Bike Share system generates large-scale trip data that reflects ur
 * `scripts/` : Python scripts used for data cleaning and regression modeling.
 * `css/` : Contains CSS files used for styling the project's website.
 * `index.html` : Main webpage for GitHub Pages hosting.
+* `details.html` : Provides in-depth technical information about the project methodology and dataset.
+* `interactive.html` : Features the interactive tool for dynamic exploration of the data.
+* `visualization.html` : Displays the visual maps generated from the analysis.
 
 ## Hosting
 
