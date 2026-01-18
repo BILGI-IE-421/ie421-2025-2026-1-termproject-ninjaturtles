@@ -29,3 +29,5 @@ Website repository: https://github.com/BILGI-IE-421/ie421-2025-2026-1-termprojec
 
 Website link: https://mertadad.github.io/ninjaturtles_website/
 
+https://bilgi-ie-421.github.io/ie421-2025-2026-1-termproject-ninjaturtles/
+
