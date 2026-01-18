@@ -46,11 +46,21 @@
         /* Intro Kutusu */
         .intro-box {
             background-color: rgba(255, 255, 255, 0.95); 
-            padding: 40px; 
+            padding: 30px; 
             border-radius: 12px; 
             margin-bottom: 50px; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            border-left: 6px solid #00AEEF; 
+        }
+
+        /* Başlık Stilleri */
+        .section-header {
+            color: #2c3e50; 
+            border-left: 5px solid #00AEEF; 
+            padding-left: 15px; 
+            font-size: 2rem; 
+            margin-top: 0; 
+            margin-bottom: 20px; 
+            font-weight: bold;
         }
         
         .charts-grid { display: grid; grid-template-columns: 1fr; gap: 50px; }
@@ -84,7 +94,9 @@
             overflow: hidden; 
             background-color: white;
             margin: 0 auto 30px auto; 
-            display: block;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
@@ -93,7 +105,7 @@
             height: 400px; display: flex; justify-content: center; align-items: center;
         }
         
-        /* Metin Ayarları: 1.2rem ve Justify */
+        /* Metin Ayarları */
         .chart-desc { margin-top: 20px; color: #444; font-size: 1.2rem; line-height: 1.6; background-color: #f9fbfd; padding: 20px; border-radius: 8px; text-align: justify; }
 
         footer { text-align: center; color: #ddd; padding: 20px; font-size: 0.9rem; margin-top: 20px; }
@@ -131,8 +143,8 @@
         </div>
 
         <div class="intro-box">
-            <h2 style="margin-top: 0; color: #00AEEF; font-size: 2rem;">Data in Motion: Visualizing NYC’s Citi Bike Network</h2>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #444; margin-top: 20px;">
+            <h2 class="section-header">Data in Motion: Visualizing NYC’s Citi Bike Network</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #444; margin-top: 0;"> 
                 Numbers tell a story, but visualizations bring that story to life. This project transforms millions of data points into a narrative of urban movement, revealing the heartbeat of New York City.
                 <br><br>
                 Throughout this journey, we will uncover the city’s daily rhythm, expose the logistical struggles of station imbalances, and quantify the environmental impact of green commuting. Finally, you will have the tools to explore these patterns yourself.
@@ -186,12 +198,14 @@
             <div class="chart-box">
                 <h2 class="chart-title">3. Environmental Impact: Regression Analysis</h2>
                 
-                <div class="image-container placeholder">Multiple Regression Chart Coming Soon</div>
+                <div class="image-container">
+                    <img src="regression.png" alt="Regression Analysis Chart" class="chart-img" onclick="openLightbox(this)">
+                </div>
                 
                 <p class="chart-desc">
                     Why do we tackle immense logistical challenges to move thousands of bikes every day? The answer lies in the environmental legacy of every journey. Beyond operational struggles, our Multiple Regression Model quantifies the Citi Bike network as a massive carbon-saving engine for New York City.
                     <br><br>
-                    With an R-squared value reaching near one and a high F-statistic, our model proves that distance traveled is the primary driver of carbon savings. The data reveals a powerful truth: every kilometer pedaled prevents about 146 grams of toxic gases from entering our atmosphere. Over our nearly three-year dataset, the 3,000 tons of CO<sub>2</sub> saved is equivalent to the air-purifying power of over 150,000 mature trees.
+                    With an R-squared value reaching near one and a high F-statistic, our model proves that distance traveled is the primary driver of carbon savings. As shown in the visualization, where the color depth represents increasing trip counts, there is a near-perfect correlation between the miles covered and the reduction in greenhouse gases. The data reveals a powerful truth: every kilometer pedaled prevents about 146 grams of toxic gases from entering our atmosphere. Over our nearly three-year dataset, the 3,000 tons of CO<sub>2</sub> saved is equivalent to the air-purifying power of over 150,000 mature trees.
                     <br><br>
                     This analysis proves that every operational fix directly accelerates New York’s green goals. Behind the logistical chaos is a silent, powerful forest growing with every pedal stroke. Now, you can witness this living network in action and explore the interactive map below.
                 </p>
@@ -201,11 +215,11 @@
                 <h2 class="chart-title">4. Station Network (Interactive)</h2>
                 
                 <div class="iframe-container">
-                    <iframe src="interactive.html" width="100%" height="100%" style="border:none;" scrolling="no"></iframe>
+                    <iframe src="interactive.html" width="100%" height="100%" style="border:none; display:block;" scrolling="no"></iframe>
                 </div>
 
                 <p class="chart-desc">
-                    <em style="color: #666; display: block; margin-bottom: 20px;">(Data represents the general average from November 2024 to October 2025 mapped to a 24-hour cycle.)</em>
+                    <em style="color: #666; display: block; margin-bottom: 20px;">Please switch to dual map view and then close current panel on the top right corner for a better experience.</em>
                     
                     It is time to see the system in action. This interactive map brings the entire NYC Citi Bike network to life, allowing you to witness a simulated "typical day" in New York. Instead of a single date in history, this visualization reveals how the city breathes across all five boroughs based on averages calculated from November 2024 to October 2025.
                     <br><br>
@@ -218,10 +232,21 @@
                     <strong>Station Details:</strong> Click any station to see its name and exact balance at any moment in the cycle.
                     <br><br>
                     This tool transforms abstract numbers into a tangible experience. Whether it’s the morning tidal wave into Manhattan or the evening return to residential neighborhoods, you can now see exactly how the logistical challenges we discussed play out on your own street or at your favorite park.
+
+                    <br><br>
+                    <em style="color: #666; display: block; margin-top: 10px;">(Data represents the general average from November 2024 to October 2025 mapped to a 24-hour cycle.)</em>
                 </p>
             </div>
 
         </div>
+
+        <div class="intro-box" style="margin-top: 50px;">
+            <h2 class="section-header">Conclusion</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #444; margin-top: 0; text-align: justify;">
+                This project reveals the NYC Citi Bike network as a complex ecosystem where data-driven insights drive urban sustainability. By linking predictable daily rhythms to logistical imbalances, we demonstrate how every operational fix supports a greener purpose. Our analysis proves the network saves thousands of tons of CO<sub>2</sub>—the equivalent of well over a hundred thousand trees. Ultimately, every pedal stroke is a measurable step toward a more efficient and sustainable New York.
+            </p>
+        </div>
+
     </div>
     
     <footer>© 2026 NYC Bike Project</footer>
