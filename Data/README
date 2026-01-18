@@ -1,2 +1,5 @@
-Due to GitHub file size limitations, some of the datasets used in this project are available at the Google Drive link below.
+Due to GitHub file size limitations, some of the raw datasets used in this project are available at the Google Drive link below.
 https://drive.google.com/file/d/1-y-Zls_jEyR8rpOYXtqLV8LIs9ljEifi/view?usp=sharing
+
+By aggregating the raw data, we obtained the monthly_flows, hourly_patterns, and station_stats datasets to visualize the desired graphs. Due to GitHub's file size limitations, the monthly_flows file is available via the following Google Drive link.
+https://drive.google.com/file/d/1UmNiJggMueGemjvqQQIEkKdZeSyZ5HvU/view?usp=sharing
