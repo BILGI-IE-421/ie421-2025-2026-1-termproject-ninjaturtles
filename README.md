@@ -16,7 +16,7 @@ New York City Bike Share system generates large-scale trip data that reflects ur
 ## Files 
 
 * `data/` : Contains the Citi Bike trip datasets used for analysis.
-* `visuals/` : Includes the heatmap for temporal usage patterns, bar charts for station imbalances, regression plots for environmental impact, and an interactive 24-hour flow map.
+* `visuals/` : Includes the heatmap for temporal usage patterns, bar charts for station imbalances, regression plots for environmental impact, and an interactive flow map.
 * `scripts/` : Python scripts used for data cleaning and regression modeling.
 * `css/` : Contains CSS files used for styling the project's website.
 * `index.html` : Main webpage for GitHub Pages hosting.
